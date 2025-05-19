@@ -1,0 +1,68 @@
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <title>Confirm Your Subscription</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        padding: 20px;
+        color: #333;
+      }
+      .container {
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 8px;
+        max-width: 600px;
+        margin: 0 auto;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      .button {
+        display: inline-block;
+        background-color: #007bff;
+        color: #ffffff;
+        padding: 12px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 20px;
+      }
+      .footer {
+        margin-top: 30px;
+        font-size: 12px;
+        color: #777;
+        text-align: center;
+      }
+      code {
+        font-family: monospace;
+        background-color: #f0f0f0;
+        padding: 3px 6px;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class='container'>
+      <h2>Confirm Your Weather Subscription</h2>
+      <p>Hello,</p>
+      <p>
+        You requested to receive weather updates for
+        <strong>{{city}}</strong>.
+      </p>
+      <p>
+        Please confirm your subscription using the code below:
+      </p>
+      <p style='font-size: 24px;'>
+        <strong><code>{{code}}</code></strong>
+      </p>
+      <p>
+        Or click the button to confirm automatically:
+      </p>
+      <a href='{{confirmUrl}}' class='button' style='color: #fff;'>Confirm
+        Subscription</a>
+
+      <div class='footer'>
+        If you didn’t request this, you can ignore this email.
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <title>You've Unsubscribed</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        padding: 20px;
+        color: #333;
+      }
+      .container {
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 8px;
+        max-width: 600px;
+        margin: 0 auto;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      .footer {
+        margin-top: 30px;
+        font-size: 12px;
+        color: #777;
+        text-align: center;
+      }
+      a.button {
+        display: inline-block;
+        background-color: #007bff;
+        color: #ffffff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class='container'>
+      <h2>You’ve Unsubscribed</h2>
+      <p>Hello {{email}},</p>
+      <p>
+        You have successfully unsubscribed from weather updates for
+        <strong>{{city}}</strong>.
+      </p>
+      <p>You will no longer receive
+        {{frequency}}
+        updates to
+        <strong>{{email}}</strong>.</p>
+
+      <p>If this was a mistake, you can re-subscribe anytime.</p>
+
+      <div class='footer'>
+        Weather App ©
+        {{year}}<br />
+        You can manage your preferences anytime.
+      </div>
+    </div>
+  </body>
+</html>

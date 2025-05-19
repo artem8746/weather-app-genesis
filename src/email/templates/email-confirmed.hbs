@@ -1,0 +1,61 @@
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <title>Subscription Confirmed</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        padding: 20px;
+        color: #333;
+      }
+      .container {
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 8px;
+        max-width: 600px;
+        margin: 0 auto;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      .button {
+        display: inline-block;
+        background-color: #28a745;
+        color: #ffffff;
+        padding: 12px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 20px;
+      }
+      .footer {
+        margin-top: 30px;
+        font-size: 12px;
+        color: #777;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class='container'>
+      <h2>You're Subscribed! ✅</h2>
+      <p>Hello {{email}},</p>
+      <p>
+        Your subscription to weather updates for
+        <strong>{{city}}</strong>
+        has been successfully confirmed.
+      </p>
+      <p>
+        You'll now receive
+        {{frequency}}
+        updates directly to
+        <strong>{{email}}</strong>.
+      </p>
+
+      <p>Thank you for using Weather App!</p>
+
+      <div class='footer'>
+        If you didn’t confirm this subscription, you can
+        <a href='{{unsubscribeUrl}}'>unsubscribe here</a>.
+      </div>
+    </div>
+  </body>
+</html>

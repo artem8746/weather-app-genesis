@@ -1,0 +1,24 @@
+services:
+  api:
+    build: .
+    ports:
+      - '3100:3100'
+    depends_on:
+      - postgres
+    env_file:
+      - .env.prod
+    command: sh -c "npx prisma migrate deploy && npx prisma generate && node dist/main.js"
+
+  postgres:
+    image: postgres:13
+    container_name: weather-app-postgres
+    env_file:
+      - .env
+    restart: unless-stopped
+    ports:
+      - '${DB_PORT}:5432'
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
