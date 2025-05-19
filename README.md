@@ -23,12 +23,12 @@ A backend API built with **NestJS** that allows users to:
 
 ## 📂 API Endpoints
 
-| Method | Endpoint                        | Description                                 |
-|--------|----------------------------------|---------------------------------------------|
-| GET    | `/api/weather?city=London`      | Get current weather for a city              |
-| POST   | `/api/subscribe`                | Subscribe an email to weather updates       |
-| GET    | `/api/confirm/:token`           | Confirm email subscription                  |
-| GET    | `/api/unsubscribe/:token`       | Unsubscribe from weather updates            |
+| Method | Endpoint                   | Description                           |
+| ------ | -------------------------- | ------------------------------------- |
+| GET    | `/api/weather?city=London` | Get current weather for a city        |
+| POST   | `/api/subscribe`           | Subscribe an email to weather updates |
+| GET    | `/api/confirm/:token`      | Confirm email subscription            |
+| GET    | `/api/unsubscribe/:token`  | Unsubscribe from weather updates      |
 
 ---
 
@@ -48,3 +48,17 @@ cp .env.example .env
 
 # Build and start the containers
 docker-compose up --build
+
+# Navigate to http://localhost:3100/swagger
+```
+
+## 🚀 Deployment
+
+The API is deployed and available at:
+
+🌍 **[https://weather-app-genesis.onrender.com/](https://weather-app-genesis.onrender.com/)**
+
+You can access:
+
+- **Base URL**: `https://weather-app-genesis.onrender.com/`
+- **Swagger Docs**: `https://weather-app-genesis.onrender.com/swagger`
